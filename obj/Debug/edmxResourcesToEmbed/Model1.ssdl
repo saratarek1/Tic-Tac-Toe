@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Game_Match">
+    <Key>
+      <PropertyRef Name="games_match_id" />
+    </Key>
+    <Property Name="games_match_id" Type="int" Nullable="false" />
+    <Property Name="games_id" Type="int" />
+    <Property Name="player1_score" Type="int" />
+    <Property Name="player2_score" Type="int" />
+    <Property Name="player_id" Type="int" />
+  </EntityType>
+  <EntityType Name="Games">
+    <Key>
+      <PropertyRef Name="games_id" />
+    </Key>
+    <Property Name="games_id" Type="int" Nullable="false" />
+    <Property Name="player_id" Type="int" />
+    <Property Name="player1_id" Type="int" />
+    <Property Name="player2_id" Type="int" />
+    <Property Name="match_number" Type="int" />
+  </EntityType>
+  <EntityType Name="Player_Information">
+    <Key>
+      <PropertyRef Name="player_id" />
+    </Key>
+    <Property Name="player_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="player_name" Type="varchar" MaxLength="50" />
+    <Property Name="player_age" Type="int" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK_Game_Match_Games">
+    <End Role="Games" Type="Self.Games" Multiplicity="0..1" />
+    <End Role="Game_Match" Type="Self.Game_Match" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Games">
+        <PropertyRef Name="games_id" />
+      </Principal>
+      <Dependent Role="Game_Match">
+        <PropertyRef Name="games_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Games_Player_Information1">
+    <End Role="Player_Information" Type="Self.Player_Information" Multiplicity="0..1" />
+    <End Role="Games" Type="Self.Games" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Player_Information">
+        <PropertyRef Name="player_id" />
+      </Principal>
+      <Dependent Role="Games">
+        <PropertyRef Name="player_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="Game_Match" EntityType="Self.Game_Match" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Games" EntityType="Self.Games" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Player_Information" EntityType="Self.Player_Information" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Game_Match_Games" Association="Self.FK_Game_Match_Games">
+      <End Role="Games" EntitySet="Games" />
+      <End Role="Game_Match" EntitySet="Game_Match" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Games_Player_Information1" Association="Self.FK_Games_Player_Information1">
+      <End Role="Player_Information" EntitySet="Player_Information" />
+      <End Role="Games" EntitySet="Games" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

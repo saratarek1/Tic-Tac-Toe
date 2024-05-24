@@ -1,0 +1,22 @@
+C:\Users\Sarat\source\repos\Tic Toc Toe\Tic Toc Toe\bin\Debug\Tic Toc Toe.exe.config
+C:\Users\Sarat\source\repos\Tic Toc Toe\Tic Toc Toe\bin\Debug\Tic Toc Toe.exe
+C:\Users\Sarat\source\repos\Tic Toc Toe\Tic Toc Toe\bin\Debug\Tic Toc Toe.pdb
+C:\Users\Sarat\source\repos\Tic Toc Toe\Tic Toc Toe\bin\Debug\EntityFramework.dll
+C:\Users\Sarat\source\repos\Tic Toc Toe\Tic Toc Toe\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Sarat\source\repos\Tic Toc Toe\Tic Toc Toe\bin\Debug\EntityFramework.xml
+C:\Users\Sarat\source\repos\Tic Toc Toe\Tic Toc Toe\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Sarat\source\repos\Tic Toc Toe\Tic Toc Toe\obj\Debug\Tic Toc Toe.csproj.AssemblyReference.cache
+C:\Users\Sarat\source\repos\Tic Toc Toe\Tic Toc Toe\obj\Debug\Tic_Toc_Toe.Properties.Resources.resources
+C:\Users\Sarat\source\repos\Tic Toc Toe\Tic Toc Toe\obj\Debug\Tic Toc Toe.csproj.GenerateResource.cache
+C:\Users\Sarat\source\repos\Tic Toc Toe\Tic Toc Toe\obj\Debug\Tic Toc Toe.csproj.CoreCompileInputs.cache
+C:\Users\Sarat\source\repos\Tic Toc Toe\Tic Toc Toe\obj\Debug\Tic Toc Toe.csproj.CopyComplete
+C:\Users\Sarat\source\repos\Tic Toc Toe\Tic Toc Toe\obj\Debug\Tic Toc Toe.exe
+C:\Users\Sarat\source\repos\Tic Toc Toe\Tic Toc Toe\obj\Debug\Tic Toc Toe.pdb
+C:\Users\Sarat\source\repos\Tic Toc Toe\Tic Toc Toe\obj\Debug\Tic_Toc_Toe.afterstartform.resources
+C:\Users\Sarat\source\repos\Tic Toc Toe\Tic Toc Toe\obj\Debug\Tic_Toc_Toe.Startform.resources
+C:\Users\Sarat\source\repos\Tic Toc Toe\Tic Toc Toe\obj\Debug\Tic_Toc_Toe.game.resources
+C:\Users\Sarat\source\repos\Tic Toc Toe\Tic Toc Toe\obj\Debug\Tic_Toc_Toe.NameForm.resources
+C:\Users\Sarat\source\repos\Tic Toc Toe\Tic Toc Toe\obj\Debug\Tic_Toc_Toe.Login.resources
+C:\Users\Sarat\source\repos\Tic Toc Toe\Tic Toc Toe\obj\Debug\Tic_Toc_Toe.AdmainClick.resources
+C:\Users\Sarat\source\repos\Tic Toc Toe\Tic Toc Toe\obj\Debug\Tic_Toc_Toe.AdminDashboard.resources
+C:\Users\Sarat\source\repos\Tic Toc Toe\Tic Toc Toe\obj\Debug\Tic_Toc_Toe.Form1.resources
