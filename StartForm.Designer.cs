@@ -40,9 +40,9 @@
             this.STARTGAME.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.STARTGAME.Font = new System.Drawing.Font("Wide Latin", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.STARTGAME.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.STARTGAME.Location = new System.Drawing.Point(153, 126);
+            this.STARTGAME.Location = new System.Drawing.Point(66, 300);
             this.STARTGAME.Name = "STARTGAME";
-            this.STARTGAME.Size = new System.Drawing.Size(278, 52);
+            this.STARTGAME.Size = new System.Drawing.Size(313, 52);
             this.STARTGAME.TabIndex = 2;
             this.STARTGAME.Text = "START";
             this.STARTGAME.UseVisualStyleBackColor = false;
@@ -50,23 +50,28 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Tic_Toc_Toe.Properties.Resources.Screenshot__132_;
-            this.pictureBox1.Location = new System.Drawing.Point(-2, -2);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-6, -47);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(617, 296);
+            this.pictureBox1.Size = new System.Drawing.Size(452, 445);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // Startform
+            // StartForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(614, 294);
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(442, 400);
             this.Controls.Add(this.STARTGAME);
             this.Controls.Add(this.pictureBox1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Startform";
+            this.Name = "StartForm";
             this.Text = "Tic Tac Toe";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -75,8 +80,8 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button STARTGAME;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

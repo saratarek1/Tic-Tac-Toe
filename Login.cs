@@ -17,10 +17,9 @@ namespace Tic_Toc_Toe
             InitializeComponent();
         }
 
-
         private void AdmainLogin_Click(object sender, EventArgs e)
         {
-       AdmainClick admainClick = new AdmainClick();
+            AdmainClick admainClick = new AdmainClick();
             admainClick.Show(); 
         }
 

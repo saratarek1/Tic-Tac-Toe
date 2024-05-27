@@ -267,16 +267,18 @@
             this.btnTic1.UseVisualStyleBackColor = true;
             this.btnTic1.Click += new System.EventHandler(this.btnTic1_Click);
             // 
-            // game
+            // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(804, 363);
+            this.ClientSize = new System.Drawing.Size(804, 366);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "game";
+            this.Name = "Game";
             this.Text = "Game";
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);

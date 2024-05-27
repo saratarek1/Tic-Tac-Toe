@@ -35,12 +35,14 @@
             this.player1 = new System.Windows.Forms.Label();
             this.NEWGAME = new System.Windows.Forms.Button();
             this.newname = new System.Windows.Forms.Button();
+            this.entityConnection1 = new System.Data.Entity.Core.EntityClient.EntityConnection();
             this.SuspendLayout();
             // 
             // comboBox1
             // 
+            this.comboBox1.BackColor = System.Drawing.SystemColors.HighlightText;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(126, 82);
+            this.comboBox1.Location = new System.Drawing.Point(116, 82);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(168, 24);
             this.comboBox1.TabIndex = 0;
@@ -74,41 +76,45 @@
             // 
             // NEWGAME
             // 
+            this.NEWGAME.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("NEWGAME.BackgroundImage")));
+            this.NEWGAME.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.NEWGAME.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NEWGAME.Location = new System.Drawing.Point(179, 207);
+            this.NEWGAME.Location = new System.Drawing.Point(344, 161);
             this.NEWGAME.Name = "NEWGAME";
-            this.NEWGAME.Size = new System.Drawing.Size(237, 40);
+            this.NEWGAME.Size = new System.Drawing.Size(155, 69);
             this.NEWGAME.TabIndex = 9;
-            this.NEWGAME.Text = "START GAME";
+            this.NEWGAME.Text = "\r\n";
             this.NEWGAME.UseVisualStyleBackColor = true;
             this.NEWGAME.Click += new System.EventHandler(this.NEWGAME_Click);
             // 
             // newname
             // 
+            this.newname.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("newname.BackgroundImage")));
+            this.newname.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.newname.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newname.Location = new System.Drawing.Point(179, 161);
             this.newname.Name = "newname";
-            this.newname.Size = new System.Drawing.Size(234, 40);
+            this.newname.Size = new System.Drawing.Size(147, 69);
             this.newname.TabIndex = 11;
-            this.newname.Text = "NEW NAME";
             this.newname.UseVisualStyleBackColor = true;
             this.newname.Click += new System.EventHandler(this.newname_Click);
             // 
-            // afterstartform
+            // AfterStartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(616, 306);
+            this.ClientSize = new System.Drawing.Size(616, 264);
             this.Controls.Add(this.newname);
             this.Controls.Add(this.NEWGAME);
             this.Controls.Add(this.player1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimizeBox = false;
-            this.Name = "afterstartform";
+            this.Name = "AfterStartForm";
             this.Text = "AfterStartForm";
             this.Load += new System.EventHandler(this.afterstartform_Load);
             this.ResumeLayout(false);
@@ -124,5 +130,6 @@
         private System.Windows.Forms.Label player1;
         private System.Windows.Forms.Button NEWGAME;
         private System.Windows.Forms.Button newname;
+        private System.Data.Entity.Core.EntityClient.EntityConnection entityConnection1;
     }
 }

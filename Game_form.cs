@@ -14,18 +14,46 @@ namespace Tic_Toc_Toe
     public partial class Game : Form
     {
         //checks if the current player will be X or O 
-        Boolean checker;  
+        private Boolean checker;  
 
         //winning counter 
-        int plusone;
+        private int plusone;
 
         //count filled Cells
-        int filledCells = 0;
+        private int filledCells = 0;
+
         public Game(string p1, string p2)
         {
             InitializeComponent();
+
             label1.Text = p1 + " X :";
             label2.Text = p2 + " O :";
+        }
+
+        public void setChecker(Boolean val)
+        {
+            this.checker = val;
+        }
+        public void setPlusone(int val)
+        {
+            this.plusone = val;
+        }
+        public void setFilledCells(int val)
+        {
+            this.filledCells = val;
+        }
+
+        public Boolean getChecker()
+        {
+            return this.checker;
+        }
+        public int getPlusone()
+        {
+            return this.plusone;
+        }
+        public int getFilledCells()
+        {
+            return this.filledCells;
         }
 
         void Enable_false()
@@ -69,23 +97,39 @@ namespace Tic_Toc_Toe
         void score()
         {
             
-                 if (evaluteButtons(checker ? "X" : "O", new List<Button>() { btnTic1, btnTic2, btnTic3 }, checker ? lblplayrX : lblplayrO))
-            { playerWin(checker); }
-            else if (evaluteButtons(checker ? "X" : "O", new List<Button>() { btnTic1, btnTic4, btnTic7 }, checker ? lblplayrX : lblplayrO))
-            { playerWin(checker); }
-            else if (evaluteButtons(checker ? "X" : "O", new List<Button>() { btnTic1, btnTic5, btnTic9 }, checker ? lblplayrX : lblplayrO))
-            { playerWin(checker); }
-            else if (evaluteButtons(checker ? "X" : "O", new List<Button>() { btnTic3, btnTic5, btnTic7 }, checker ? lblplayrX : lblplayrO))
-            { playerWin(checker); }
-            else if (evaluteButtons(checker ? "X" : "O", new List<Button>() { btnTic2, btnTic5, btnTic8 }, checker ? lblplayrX : lblplayrO))
-            { playerWin(checker); }
-            else if (evaluteButtons(checker ? "X" : "O", new List<Button>() { btnTic3, btnTic6, btnTic9 }, checker ? lblplayrX : lblplayrO))
-            { playerWin(checker); }
-            else if (evaluteButtons(checker ? "X" : "O", new List<Button>() { btnTic4, btnTic5, btnTic6 }, checker ? lblplayrX : lblplayrO))
-            { playerWin(checker); }
-            else if (evaluteButtons(checker ? "X" : "O", new List<Button>() { btnTic7, btnTic8, btnTic9 }, checker ? lblplayrX : lblplayrO))
-            { playerWin(checker); }
-            else if (filledCells == 9)
+            if (evaluteButtons(this.getChecker() ? "X" : "O", new List<Button>() { btnTic1, btnTic2, btnTic3 }, this.getChecker() ? lblplayrX : lblplayrO))
+            { 
+                playerWin(this.getChecker()); 
+            }
+            else if (evaluteButtons(this.getChecker() ? "X" : "O", new List<Button>() { btnTic1, btnTic4, btnTic7 }, this.getChecker() ? lblplayrX : lblplayrO))
+            { 
+                playerWin(this.getChecker()); 
+            }
+            else if (evaluteButtons(this.getChecker() ? "X" : "O", new List<Button>() { btnTic1, btnTic5, btnTic9 }, this.getChecker() ? lblplayrX : lblplayrO))
+            { 
+                playerWin(this.getChecker()); 
+            }
+            else if (evaluteButtons(this.getChecker() ? "X" : "O", new List<Button>() { btnTic3, btnTic5, btnTic7 }, this.getChecker() ? lblplayrX : lblplayrO))
+            { 
+                playerWin(this.getChecker()); 
+            }
+            else if (evaluteButtons(this.getChecker() ? "X" : "O", new List<Button>() { btnTic2, btnTic5, btnTic8 }, this.getChecker() ? lblplayrX : lblplayrO))
+            { 
+                playerWin(this.getChecker()); 
+            }
+            else if (evaluteButtons(this.getChecker() ? "X" : "O", new List<Button>() { btnTic3, btnTic6, btnTic9 }, this.getChecker() ? lblplayrX : lblplayrO))
+            { 
+                playerWin(this.getChecker()); 
+            }
+            else if (evaluteButtons(this.getChecker() ? "X" : "O", new List<Button>() { btnTic4, btnTic5, btnTic6 }, this.getChecker() ? lblplayrX : lblplayrO))
+            { 
+                playerWin(this.getChecker()); 
+            }
+            else if (evaluteButtons(this.getChecker() ? "X" : "O", new List<Button>() { btnTic7, btnTic8, btnTic9 }, this.getChecker() ? lblplayrX : lblplayrO))
+            { 
+                playerWin(this.getChecker()); 
+            }
+            else if (this.getFilledCells() == 9)
             {
                 MessageBox.Show("It's a draw!", "Tic Tac Toe", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Enable_false();
@@ -93,9 +137,9 @@ namespace Tic_Toc_Toe
         }
          void playerWin(bool checker)
         {
-            string player = checker ? "X" : "O";
+            string player = this.getChecker() ? "X" : "O";
             MessageBox.Show("The winner is player " + player, "Tic Tac Toi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Label targetLbl = checker ? lblplayrX : lblplayrO;
+            Label targetLbl = this.getChecker() ? lblplayrX : lblplayrO;
             plusone = int.Parse(targetLbl.Text);
             targetLbl.Text = Convert.ToString(plusone + 1);
             Enable_false();
@@ -113,18 +157,23 @@ namespace Tic_Toc_Toe
    
         private void onBtnClick(Button btn)
         {
-            if (checker == false)
+            if (this.getChecker() == false)
             {
                 btn.Text = "X";
-                checker = true;
+                this.setChecker(true);
             }
             else
             {
                 btn.Text = "O";
-                checker = false;
+                this.setChecker(false);
             }
-            filledCells++;
+
+            int filledCells = this.getFilledCells();
+
+            this.setFilledCells(filledCells++);
+
             score();
+
             btn.Enabled = false;
         }
        
@@ -192,7 +241,8 @@ namespace Tic_Toc_Toe
         {
             try
             {
-                filledCells = 0;
+                this.setFilledCells(0);
+
                 Enable_true();
                 btnsTextClear();
                 
@@ -214,7 +264,8 @@ namespace Tic_Toc_Toe
         {
             try
             {
-                filledCells = 0;
+                this.setFilledCells(0);
+
                 Enable_true();
                 btnsTextClear();    
 
@@ -246,6 +297,5 @@ namespace Tic_Toc_Toe
                 MessageBox.Show(ex.Message, "Tic Tac Toe", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-
     }
 }

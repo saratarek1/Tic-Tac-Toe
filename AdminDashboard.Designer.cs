@@ -130,12 +130,13 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Admin_Dashboard
+            // AdminDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(461, 447);
+            this.ClientSize = new System.Drawing.Size(451, 446);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.dataGridView1);
@@ -145,7 +146,8 @@
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAdd);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Admin_Dashboard";
+            this.MaximizeBox = false;
+            this.Name = "AdminDashboard";
             this.Text = "Admin Dashboard";
             this.Load += new System.EventHandler(this.Settings_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

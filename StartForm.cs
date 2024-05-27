@@ -16,16 +16,11 @@ namespace Tic_Toc_Toe
         {
             InitializeComponent();
         }
-
-     
-
         private void STARTGAME_Click(object sender, EventArgs e)
         {
             Login AfterNewGame = new Login();
             AfterNewGame.Show();
            
         }
-
-  
     }
 }

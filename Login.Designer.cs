@@ -37,9 +37,9 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(136, 55);
+            this.label1.Location = new System.Drawing.Point(314, 207);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 37);
             this.label1.TabIndex = 0;
@@ -48,37 +48,41 @@
             // ADMAIN
             // 
             this.ADMAIN.AutoSize = true;
-            this.ADMAIN.Font = new System.Drawing.Font("Microsoft YaHei UI", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ADMAIN.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ADMAIN.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ADMAIN.Location = new System.Drawing.Point(107, 134);
+            this.ADMAIN.Location = new System.Drawing.Point(68, 214);
             this.ADMAIN.Name = "ADMAIN";
-            this.ADMAIN.Size = new System.Drawing.Size(143, 37);
+            this.ADMAIN.Size = new System.Drawing.Size(126, 30);
             this.ADMAIN.TabIndex = 1;
             this.ADMAIN.Text = "ADMAIN";
             // 
             // AdmainLogin
             // 
-            this.AdmainLogin.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.AdmainLogin.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.AdmainLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AdmainLogin.BackgroundImage")));
+            this.AdmainLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.AdmainLogin.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdmainLogin.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.AdmainLogin.Location = new System.Drawing.Point(276, 134);
+            this.AdmainLogin.Location = new System.Drawing.Point(45, 34);
             this.AdmainLogin.Name = "AdmainLogin";
-            this.AdmainLogin.Size = new System.Drawing.Size(147, 37);
+            this.AdmainLogin.Size = new System.Drawing.Size(181, 152);
             this.AdmainLogin.TabIndex = 3;
-            this.AdmainLogin.Text = "CLICK";
+            this.AdmainLogin.Text = "\r\n";
             this.AdmainLogin.UseVisualStyleBackColor = false;
             this.AdmainLogin.Click += new System.EventHandler(this.AdmainLogin_Click);
             // 
             // UserLogin
             // 
+            this.UserLogin.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.UserLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("UserLogin.BackgroundImage")));
+            this.UserLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.UserLogin.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UserLogin.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.UserLogin.Location = new System.Drawing.Point(276, 55);
+            this.UserLogin.Location = new System.Drawing.Point(266, 34);
             this.UserLogin.Name = "UserLogin";
-            this.UserLogin.Size = new System.Drawing.Size(147, 37);
+            this.UserLogin.Size = new System.Drawing.Size(192, 152);
             this.UserLogin.TabIndex = 4;
-            this.UserLogin.Text = "CLICK";
-            this.UserLogin.UseVisualStyleBackColor = true;
+            this.UserLogin.UseVisualStyleBackColor = false;
             this.UserLogin.Click += new System.EventHandler(this.UserLogin_Click);
             // 
             // Login
@@ -86,7 +90,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(567, 253);
+            this.ClientSize = new System.Drawing.Size(500, 259);
             this.Controls.Add(this.UserLogin);
             this.Controls.Add(this.AdmainLogin);
             this.Controls.Add(this.ADMAIN);

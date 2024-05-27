@@ -19,4 +19,3 @@ C:\Users\Sarat\source\repos\Tic Toc Toe\Tic Toc Toe\obj\Debug\Tic_Toc_Toe.NameFo
 C:\Users\Sarat\source\repos\Tic Toc Toe\Tic Toc Toe\obj\Debug\Tic_Toc_Toe.Login.resources
 C:\Users\Sarat\source\repos\Tic Toc Toe\Tic Toc Toe\obj\Debug\Tic_Toc_Toe.AdmainClick.resources
 C:\Users\Sarat\source\repos\Tic Toc Toe\Tic Toc Toe\obj\Debug\Tic_Toc_Toe.AdminDashboard.resources
-C:\Users\Sarat\source\repos\Tic Toc Toe\Tic Toc Toe\obj\Debug\Tic_Toc_Toe.Form1.resources

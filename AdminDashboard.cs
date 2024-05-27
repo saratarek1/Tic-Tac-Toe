@@ -11,6 +11,10 @@ namespace Tic_Toc_Toe
         {
             RefreshPlayerData();
         }
+        public AdminDashboard()
+        {
+            InitializeComponent();
+        }
 
         private void RefreshPlayerData()
         {
@@ -37,10 +41,7 @@ namespace Tic_Toc_Toe
         }
         private string connectionString = @"Data Source=LAPTOP-FT2KH9LD;Initial Catalog=Tic Tac Toe;User ID=sa;Password=sara123;";
 
-        public AdminDashboard()
-        {
-            InitializeComponent();
-        }
+
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -182,7 +183,6 @@ namespace Tic_Toc_Toe
                     MessageBox.Show("Error: " + ex.Message);
                 }
             }
-
         }
     }
 }

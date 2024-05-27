@@ -48,26 +48,28 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(132, 148);
+            this.textBox1.Location = new System.Drawing.Point(132, 96);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(246, 22);
             this.textBox1.TabIndex = 1;
             // 
             // NEWGAME
             // 
-            this.NEWGAME.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.NEWGAME.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.NEWGAME.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("NEWGAME.BackgroundImage")));
+            this.NEWGAME.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.NEWGAME.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NEWGAME.Location = new System.Drawing.Point(132, 204);
+            this.NEWGAME.Location = new System.Drawing.Point(18, 204);
             this.NEWGAME.Name = "NEWGAME";
-            this.NEWGAME.Size = new System.Drawing.Size(237, 40);
+            this.NEWGAME.Size = new System.Drawing.Size(391, 56);
             this.NEWGAME.TabIndex = 10;
-            this.NEWGAME.Text = "START GAME";
+            this.NEWGAME.Text = "START        GAME";
             this.NEWGAME.UseVisualStyleBackColor = false;
             this.NEWGAME.Click += new System.EventHandler(this.NEWGAME_Click);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(132, 96);
+            this.textBox2.Location = new System.Drawing.Point(132, 148);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(246, 22);
             this.textBox2.TabIndex = 11;
@@ -97,7 +99,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(438, 295);
+            this.ClientSize = new System.Drawing.Size(432, 272);
             this.Controls.Add(this.player2name);
             this.Controls.Add(this.player1name);
             this.Controls.Add(this.textBox2);
